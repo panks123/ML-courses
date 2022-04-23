@@ -1,0 +1,76 @@
+Q 1) Explain:
+>> Types of Methods
+>>> instance Method
+>>> class method
+>>> static method
+>>Types Of Variables
+>>> class/static variable
+>>> instance variable
+
+Ans:Types of method in python: There are three types of methods:
+   i. instance method: instance methods are the methods that belongs to each instance of the class which means
+    each instance will have their own copy of the instance method. 
+   They can be clled by each instances pof the class. It takes 'self' as the necessary parameter. 
+   We don't need to pass it while calling the instance method.'self' refers to the current instance of the class
+
+   ii. class method: A class method is a method that belongs to the class as a whole. Class method can be called using the class name itself. 
+   Also, the same class method also belongs to all the instnces ofnthe classs. It means same class method can be called by each instance.
+   Here , while defining the class method a decorator @classmethod is used. Class method can access all the class variables. 
+   Also , it takes 'cls' as the necessry parameter which referes to the class of the curreent object.
+
+   iii. static method: A static method does not receive an implicit first argument. A static method also belongs to the class as a whole.
+       Same copy of the static method also belongs to each instance of the class i.e. the static method can bve called using the class 
+       name as well as the object name. To define a static method @static decorator is used.
+
+
+Types of variables:  there are two types of variables:
+i.class variable: class variable is the variable that belongs to the class as a whole. 
+It can be accessd using the class name as well as the the instance name . But, in case of each instance same copy of the class variable is there.
+It is declared inside the class. All the instances of the class share the the same class variable.
+
+ii. instance variable: Instance variable belongs to the instances of the class. Each instance has differet copy of the instance variable.
+    Unlike class variables, instance variables are defined constructors or they are defined by using the dot operator using the instance name.
+
+Q 2) What do you understand by Decorators in python?
+
+Ans:
+    A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure.
+     Decorators are usually called before the definition of a function we want to decorate.
+
+     e.g.
+
+     def uppercase_decorator(function):
+        def wrapper():
+            func = function()
+            make_uppercase = func.upper()
+            return make_uppercase
+
+        return wrapper
+
+    def say_hi():
+        return 'hello there'
+
+    decorate = uppercase_decorator(say_hi)
+    decorate()
+
+
+OUTPUT: HELLO THERE
+
+Python provides a much easier way for us to apply decorators. We simply use the @ symbol before the function we'd like to decorate.
+
+@uppercase_decorator
+def say_hi():
+    return 'hello there'
+
+say_hi()
+
+OUTPUT: HELLO THERE
+
+Q 3) What is the difference between static and instance method?
+
+Ans:
+i. A class method takes cls as first parameter while a static method needs no specific parameters.
+ii. A class method can access or modify class variable while a static method can’t access or modify it.
+iii. We use @classmethod decorator in python to create a class method and we use @staticmethod decorator to create a static method in python.
+iv.We generally use class methods for creating methods which can alter the class state. 
+But we create the static methods for creating methods which can perform utility functions only, they can't alter the state of the class.

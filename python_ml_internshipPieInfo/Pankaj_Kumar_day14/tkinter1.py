@@ -1,0 +1,10 @@
+from tkinter import *
+root =Tk()
+root.geometry("300x400")
+rLabel=Label(root,text='RED',bg='red',fg='white')
+gLabel=Label(root,text='GREEN',bg='green',fg='white')
+bLabel=Label(root,text='BLUE',bg='blue',fg='white')
+rLabel.pack(fill=X)
+gLabel.pack(fill=X)
+bLabel.pack(fill=Y,side=LEFT)
+root.mainloop()

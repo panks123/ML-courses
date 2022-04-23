@@ -1,0 +1,21 @@
+Q 1) What is the difference between numpy array and array module in python ?
+
+Ans:
+(i).
+Prototype of numpy array: array(object, dtype = None, copy = True, order = ‘K’, subok = False, ndmin = 0)
+Prototype of array from array module: array(typecode , [initializer])
+(ii).
+In the protoytype of numpy array everything is optional except the `object`
+In the prototype of array from array module `initializer` is optional
+(iii).
+from numpy import *
+arr=array([1,2,3,'22'])
+->-> This is valid because elements of the array will be converted into string automatically
+i.e array is :['1','2','3','22']
+
+But in array from array module:
+from array import *
+arr=array('i',[1,2,3,'22'])
+->->This will give TypeError
+As in case of array from array module we are are bound to specify the datatype of the elements of the array explicitly
+

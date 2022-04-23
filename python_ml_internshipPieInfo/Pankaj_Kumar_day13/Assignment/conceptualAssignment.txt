@@ -1,0 +1,52 @@
+Q 1) What is the difference between runtime polymorphism and compile time polymorphism?
+
+Ans:
+Compile Time Polymorphism:     
+Whenever an object is bound with their functionality at the compile-time, 
+this is known as the compile-time polymorphism. At compile-time, it is known by the compiler that which method 
+to call by checking the method signatures. So this is called compile-time polymorphism or 
+static or early binding. Compile-time polymorphism is achieved through method overloading. 
+Method Overloading says you can have more than one function with the same name in one class 
+having a different prototype. Function overloading is one of the ways to achieve polymorphism 
+but it depends on technology that which type of polymorphism we adopt.
+
+Note: 
+Unlike many other popular object-oriented programming languages such as Java, 
+Python doesn’t support compile-time polymorphism or method overloading. If a class or 
+Python script has multiple methods with the same name,  the method defined in the 
+last will override the earlier one.
+
+Runtime Polymorphism: 
+Whenever an object is bound with the functionality at run time, this is known as 
+runtime polymorphism. The runtime polymorphism can be achieved by method overriding. 
+The compiler/interpreter determines the proper method to call at the runtime, 
+not at the compile time. It is also called dynamic or late binding. 
+Method overriding says child class has the same method as declared in the parent class. 
+It means if child class provides the specific implementation of the method that has been 
+provided by one of its parent class then it is known as method overriding.
+
+Python supports method overriding and  hence runtime polymorphism.
+
+
+Q 2) write the difference between method overloaidng and method overriding.
+
+Ans:
+i. Method overloading(note: not supported in Python) is a compile time polymorphism While 
+   Method overriding is a run time polymorphism.
+ii. Method overloading occurs within the class but Method overriding 
+    occurs between two or more classes wih inheritance relationship.
+iii. Method overloading may or may not require inheritance. But, for Method 
+     overriding inheritance is necessary.
+iv. In Method overloading methods must have same name and different signature.  
+    But in method overriding methods must have same name and same signatures.
+v. In method overloading, return type can or can not be be same, but we must  
+   have to change the parameter.While in mrthod overriding, return type must be 
+   same or co-variant.
+
+Q 3) Explain super() constructor.
+
+Ans: In an inherited subclass, a parent class can be referred to with the use of the 
+super() function. The super function returns a temporary object of the superclass that
+ allows access to all of its methods to its child class. It can also be used to call 
+the super class parametrized constructor inside the child class using super().__init__() .
+

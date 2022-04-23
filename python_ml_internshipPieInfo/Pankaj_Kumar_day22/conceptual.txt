@@ -1,0 +1,17 @@
+1) What is the difference between Tkinter and OpenCV ?
+
+Ans:
+Following are the differences between Tkinter and OpenCV:
+
+i) The tkinter package (“Tk interface”) is the standard Python interface to the Tk GUI toolkit while
+   OpenCV is a cross-platform library using which we can develop real-time computer vision applications.
+
+ii) Tkinter provides a powerful object-oriented interface to the Tk GUI toolkit for GUI development while 
+    OpenCV mainly focuses on image processing, video capture and analysis including features like face detection and object detection.
+
+iii) OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library but Tkinter 
+     is the library which only consist of tools to develop a GUI, it does not uses machine learning.
+
+iv) openCV supports wide variety of programming laguages but tkint is just a python librry.
+
+ 

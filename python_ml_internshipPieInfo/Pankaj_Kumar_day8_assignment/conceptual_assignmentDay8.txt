@@ -1,0 +1,39 @@
+Q.Explain copying array using Numpy.
+
+Ans:
+
+Aliasing: Alising is done using the '=' operator .
+	  Assignment statements do not copy objects, they create bindings between a target and an object. 
+	  When we use = operator we think that this creates a new object; well, it doesn’t. 
+It only creates a new variable that shares the reference of the original object.
+>>> arr1=array([1,2,3,4])
+>>> arr2=arr1
+
+              This is like:
+                              arr1----->[1,2,3,4] <-----arr2
+
+Deep copy : It creates a actual new copy of the original array
+	    The deep copy owns the data and any changes made to the copy will not affect original array, 
+	    and any changes made to the original array will not affect the copy
+		e.g
+		        >>> arr1=array([1,2,3,4])
+			>>> arr2=arr1.copy()
+			This is like:
+                              arr1----->[1,2,3,4]              [1,2,3,4] <-----arr2
+
+Shallow copy or view: It is just a view of the original array.
+		      The view does not own the data and any changes made to the view will affect the original array, 
+		      and any changes made to the original array will affect the view.
+
+			e.g
+		        >>> arr1=array([1,2,3,4])
+			>>> arr2=arr1.copy()
+			This is like:
+
+			arr1                        arr2
+			[                           [
+			 1,<-----------------------> 1,
+			 2,<-----------------------> 2,
+ 			 3,<-----------------------> 3,
+			 4 <-----------------------> 4,
+			]			    ]

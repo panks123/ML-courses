@@ -1,0 +1,31 @@
+1.What is the differnce between Python 2.x and Python 3.x?
+
+Ans: (i) Syntax of python 3 is easier and simpler than that of Python 2
+(ii) Python 3 has Range() function to perform iterations whereas, In Python 2, the xrange() is used for iterations.
+(iii) Difference in print function: In Python 2.x print function can be written without parenthesis for printing but in Python 3.x 
+      print statement without parenthesis will give syntax error
+(iv) Difference in integer division : In python 2 3/2 will give 1 but in python 3 3/2 will give 1.5.
+(v) Strings are stored as ASCII in python 2.x but strings are stored as unicode in python 3.x
+
+2.What do you understand by PVM?
+
+Ans: 
+Python Virtual Machine: 
+When we run a Python program, two steps happen,
+(i)The code gets converted to another representation called ‘Byte Code’
+(ii)'Byte Code' gets converted to Machine Code (which is understandable by the computer)
+
+The second step is done by the python virtual machine (PVM).
+So PVM is nothing but a software/interpreter that converts the byte code to machine code for given operating system.
+PVM can be called as the Python interpreter as Python is an interpreted language.
+
+3.Write a comparison among list, tuple and dictonary.
+
+Ans:
+Lists vs Tuples vs Dictionary
+(i)Lists are mutable,tuples are immutable, and dictionaries contain elements as key value pair in which keys are immutable 
+   and values can be either mutable or immutable.
+(ii)Lists are enclosed within [], tuples are enclosed within (), Dictionaries are enclosed within {}
+(iii) Elements in lists are accesed using indexing by specifying the index of the element but in dictionary elements of dictionary 
+     are accessed using the key specified within []after name of the dictionary variable
+(iv)Lists and tuples can contain duplicates but in dictionary keys can't be duplicates although values can be duplicates
